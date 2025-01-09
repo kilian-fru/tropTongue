@@ -1,3 +1,16 @@
+#' Estimate proboscis length of tropical bees
+#'
+#' @param fam A character vector containing a combination of Apidae, Andrenidae, Halictidae, Megachilidae or Melittidae
+#' @param tribe A character vector of the same length containing the tribes
+#' @param genus A character vector of the same length containing the genera
+#' @param IT_mm A numeric vector containing the intertegular distane in mm
+#'
+#' @return A numeric vector
+#' @export
+#'
+#' @examples
+#' tropicalTongue("Apidae", "Meliponini", "Trigona", 0.7)
+#'
 tropicalTongue <- function(fam, tribe, genus, IT_mm){
 
   genus_mel <- c("Dolichotrigona", "Melipona", "Nannotrigona", "Nogueirapis",
