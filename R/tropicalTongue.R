@@ -8,6 +8,8 @@
 #' @return A numeric vector
 #' @export
 #'
+#' @import BeeIT
+#'
 #' @examples
 #' tropicalTongue("Apidae", "Meliponini", "Trigona", 0.7)
 #'
