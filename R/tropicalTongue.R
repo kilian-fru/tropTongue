@@ -26,6 +26,22 @@ tropicalTongue <- function(fam, tribe, genus, IT_mm){
 
   res <- c()
 
+  if(!is.character(fam)){
+    stop("fam must be of Type character")
+  }
+
+  if(!is.character(tribe)){
+    stop("tribe must be of Type character")
+  }
+
+  if(!is.character(genus)){
+    stop("genus must be of Type character")
+  }
+
+  if(!is.numeric(IT_mm)){
+    stop("IT_mm must be numeric")
+  }
+
   for(i in 1:length(genus)){
 
 ##### Meliponini #####
