@@ -160,7 +160,7 @@ tropicalTongue <- function(fam, tribe, genus, IT_mm){
       }
 
 ##### Euglossini #####
-    } else if(fam[i]=="Apidae" & tribe=="Euglossini"){
+    } else if(fam[i]=="Apidae" & tribe[i]=="Euglossini"){
 
       #Eufriesea
       if (genus[i]==genus_eug[1]){
