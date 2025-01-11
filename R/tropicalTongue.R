@@ -1,4 +1,4 @@
-#' Estimate the proboscis length of tropical bees
+#' Estimating the proboscis length of tropical bees
 #'
 #' @param fam A character vector containing a combination of Apidae, Andrenidae, Halictidae, Megachilidae or Melittidae
 #' @param tribe A character vector of the same length containing the tribes

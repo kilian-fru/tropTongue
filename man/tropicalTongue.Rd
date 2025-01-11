@@ -2,7 +2,7 @@
 % Please edit documentation in R/tropicalTongue.R
 \name{tropicalTongue}
 \alias{tropicalTongue}
-\title{Estimate the proboscis length of tropical bees}
+\title{Estimating the proboscis length of tropical bees}
 \usage{
 tropicalTongue(fam, tribe, genus, IT_mm)
 }
@@ -19,7 +19,7 @@ tropicalTongue(fam, tribe, genus, IT_mm)
 A numeric vector
 }
 \description{
-Estimate the proboscis length of tropical bees
+Estimating the proboscis length of tropical bees
 }
 \examples{
 tropicalTongue("Apidae", "Meliponini", "Trigona", 0.7)
