@@ -7,7 +7,7 @@
 tropicalTongue(fam, tribe, genus, IT_mm)
 }
 \arguments{
-\item{fam}{A character vector containing a combination of Apidae, Andrenidae, Halictidae, Megachilidae or Melittidae}
+\item{fam}{A character vector indicating the family by containing a combination of Apidae, Andrenidae, Halictidae, Megachilidae or Melittidae}
 
 \item{tribe}{A character vector of the same length containing the tribes}
 

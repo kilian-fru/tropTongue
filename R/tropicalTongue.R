@@ -1,6 +1,6 @@
 #' Estimating the proboscis length of tropical bees
 #'
-#' @param fam A character vector containing a combination of Apidae, Andrenidae, Halictidae, Megachilidae or Melittidae
+#' @param fam A character vector indicating the family by containing a combination of Apidae, Andrenidae, Halictidae, Megachilidae or Melittidae
 #' @param tribe A character vector of the same length containing the tribes
 #' @param genus A character vector of the same length containing the genera
 #' @param IT_mm A numeric vector containing the intertegular distane in mm
