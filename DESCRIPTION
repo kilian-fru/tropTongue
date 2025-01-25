@@ -5,7 +5,7 @@ Authors@R:
     person("Kilian", "Frühholz", , "kilian.fruehholz@tum.de", role = c("aut", "cre"),
            comment = c(ORCID = "0009-0005-1403-2315"))
 Description: Based on allometric equations we created a function which estimates the proboscis length of tropical bees based on the intertegular distance and taxonomic variables.
-License: MIT + file LICENSE
+License: file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.1
