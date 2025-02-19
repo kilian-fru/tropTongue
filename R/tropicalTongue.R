@@ -22,7 +22,7 @@ tropicalTongue <- function(fam, tribe, genus, IT_mm){
 
   genus_aug <- c("Augochlora", "Augochlorella", "Augochloropsis", "Corynura")
 
-  genus_eug <- c("Eufriesa", "Euglossa", "Eulaema", "Exarete")
+  genus_eug <- c("Eufriesa", "Euglossa", "Eulaema", "Exarete", "Euglossa sensu stricto", "Euglossa (Glossura)", "Euglossa (Glossurella)")
 
   res <- c()
 
@@ -165,27 +165,42 @@ tropicalTongue <- function(fam, tribe, genus, IT_mm){
       #Eufriesea
       if (genus[i]==genus_eug[1]){
 
-        res[i] <- exp(1.56 + 0.45 * log(IT_mm[i]))
+        res[i] <- exp(5.32 + -1.94 * log(IT_mm[i]))
 
         # Euglossa
       } else if (genus[i]==genus_eug[2]){
 
-        res[i] <- exp(1.47 + 0.87 * log(IT_mm[i]))
+        res[i] <- exp(1.46 + 0.87 * log(IT_mm[i]))
 
         # Eulaema
       } else if (genus[i]==genus_eug[3]){
 
-        res[i] <- exp(2.21 + 0.45 * log(IT_mm[i]))
+        res[i] <- exp(2.39 + 0.35 * log(IT_mm[i]))
 
-        # Exarete
+        # Exaerete
       } else if (genus[i]==genus_eug[4]){
 
-        res[i] <- exp(2.33 + 0.45 * log(IT_mm[i]))
+        res[i] <- exp(2.36 + 0.43 * log(IT_mm[i]))
+
+        # Euglossa sensu stricto
+      } else if (genus[i]==genus_eug[5]){
+
+        res[i] <- exp(3.15 + -0.87 * log(IT_mm[i]))
+
+        # Euglossa (Glossura)
+      } else if (genus[i]==genus_eug[6]){
+
+        res[i] <- exp(1.18 + 1.53 * log(IT_mm[i]))
+
+        # Euglossa (Glossurella)
+      } else if (genus[i]==genus_eug[7]){
+
+        res[i] <- exp(1.96 + 0.64 * log(IT_mm[i]))
 
         # Euglossini general
       } else if (!(genus[i] %in% genus_eug)){
 
-      res[i] <- exp(1.47 + 0.87 * log(IT_mm[i]))
+      res[i] <- exp(1.61 + 0.74 * log(IT_mm[i]))
 
       }
 
