@@ -31,6 +31,7 @@ Nannotrigona, Nogueirapis, Oxytrigona, Paratrigona, Partamona, Plebeia, Ptilotri
 }
 }
 \examples{
+library(tropTongue)
 tropicalTongue("Apidae", "Meliponini", "Trigona", 0.7)
 
 }

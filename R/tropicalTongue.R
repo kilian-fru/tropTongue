@@ -20,6 +20,7 @@
 #' @import BeeIT
 #'
 #' @examples
+#' library(tropTongue)
 #' tropicalTongue("Apidae", "Meliponini", "Trigona", 0.7)
 #'
 tropicalTongue <- function(fam, tribe, genus, IT_mm){
