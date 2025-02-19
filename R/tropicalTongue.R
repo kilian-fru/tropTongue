@@ -2,10 +2,19 @@
 #'
 #' @param fam A character vector indicating the family by containing a combination of Apidae, Andrenidae, Halictidae, Megachilidae or Melittidae
 #' @param tribe A character vector of the same length containing the tribes
-#' @param genus A character vector of the same length containing the genera
+#' @param genus A character vector of the same length containing the genera.
 #' @param IT_mm A numeric vector containing the intertegular distane in mm
 #'
 #' @return A numeric vector
+#'
+#' @details
+#' * Parameter fam accepts the following values: Apidae, Andrenidae, Halictidae, Megachilidae, Melittidae
+#' * Parameter tribe accepts the following values: Augochlorini, Euglossini, Meliponini
+#' * Parameter genus accepts the following values: Augochlora, Augochlorella, Augochloropsis, Corynura, Dolichotrigona,
+#' Eufriesa, Euglossa (Glossura), Euglossa (Glossurella)Euglossa sensu stricto, Euglossa, Eulaema, Exarete, Melipona,
+#' Nannotrigona, Nogueirapis, Oxytrigona, Paratrigona, Partamona, Plebeia, Ptilotrigona, Scaptotrigona, Scaura, Tetragona, Tetragonisca, Trigona, Trigonisca
+#'
+#'
 #' @export
 #'
 #' @import BeeIT
@@ -16,7 +25,7 @@
 tropicalTongue <- function(fam, tribe, genus, IT_mm){
 
   genus_mel <- c("Dolichotrigona", "Melipona", "Nannotrigona", "Nogueirapis",
-                 "Nannotrigona", "Oxytrigona", "Paratrigona", "Partamona",
+                 "Oxytrigona", "Paratrigona", "Partamona",
                  "Plebeia", "Ptilotrigona", "Scaptotrigona", "Scaura", "Tetragona",
                  "Tetragonisca", "Trigona", "Trigonisca")
 
