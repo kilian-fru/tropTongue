@@ -11,7 +11,7 @@
 #' * Parameter fam accepts the following values: Apidae, Andrenidae, Halictidae, Megachilidae, Melittidae
 #' * Parameter tribe accepts the following values: Augochlorini, Euglossini, Meliponini
 #' * Parameter genus accepts the following values: Augochlora, Augochlorella, Augochloropsis, Corynura, Dolichotrigona,
-#' Eufriesa, Euglossa (Glossura), Euglossa (Glossurella)Euglossa sensu stricto, Euglossa, Eulaema, Exarete, Melipona,
+#' Eufriesa, Euglossa (Glossura), Euglossa (Glossurella), Euglossa sensu stricto, Euglossa, Eulaema, Exaerete, Melipona,
 #' Nannotrigona, Nogueirapis, Oxytrigona, Paratrigona, Partamona, Plebeia, Ptilotrigona, Scaptotrigona, Scaura, Tetragona, Tetragonisca, Trigona, Trigonisca
 #'
 #'
@@ -32,7 +32,7 @@ tropicalTongue <- function(fam, tribe, genus, IT_mm){
 
   genus_aug <- c("Augochlora", "Augochlorella", "Augochloropsis", "Corynura")
 
-  genus_eug <- c("Eufriesa", "Euglossa", "Eulaema", "Exarete", "Euglossa sensu stricto", "Euglossa (Glossura)", "Euglossa (Glossurella)")
+  genus_eug <- c("Eufriesa", "Euglossa", "Eulaema", "Exaerete", "Euglossa sensu stricto", "Euglossa (Glossura)", "Euglossa (Glossurella)")
 
   res <- c()
 

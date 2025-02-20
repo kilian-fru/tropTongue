@@ -26,7 +26,7 @@ Estimating the proboscis length of tropical bees
 \item Parameter fam accepts the following values: Apidae, Andrenidae, Halictidae, Megachilidae, Melittidae
 \item Parameter tribe accepts the following values: Augochlorini, Euglossini, Meliponini
 \item Parameter genus accepts the following values: Augochlora, Augochlorella, Augochloropsis, Corynura, Dolichotrigona,
-Eufriesa, Euglossa (Glossura), Euglossa (Glossurella)Euglossa sensu stricto, Euglossa, Eulaema, Exarete, Melipona,
+Eufriesa, Euglossa (Glossura), Euglossa (Glossurella), Euglossa sensu stricto, Euglossa, Eulaema, Exaerete, Melipona,
 Nannotrigona, Nogueirapis, Oxytrigona, Paratrigona, Partamona, Plebeia, Ptilotrigona, Scaptotrigona, Scaura, Tetragona, Tetragonisca, Trigona, Trigonisca
 }
 }
