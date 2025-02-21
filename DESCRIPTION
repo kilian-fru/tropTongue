@@ -11,7 +11,7 @@ Authors@R: c(
     person("Gunnar", "Brehm", role = "aut"),
     person("Claus", "Rasmussen", role = "aut"),
     person("Sara Diana", "Leonhardt", role = "aut"),
-    person("Ugo Mendes", "Diniz", role = "aut"),
+    person("Ugo Mendes", "Diniz", role = "aut")
            )
 Description: Based on allometric equations we created a function which estimates 
     the proboscis length of tropical bees based on the intertegular distance 
