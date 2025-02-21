@@ -24,8 +24,6 @@ devtools::install_github("kilian-fru/tropTongue")
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
-
 ``` r
 library(tropTongue)
 ## tropicalTongue("Apidae", "Meliponini", "Trigona", 0.7)
