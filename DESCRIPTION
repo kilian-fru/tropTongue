@@ -1,5 +1,6 @@
 Package: tropTongue
 Title: Improving allometric models to estimate the proboscis length of tropical bees
+Year: 2025
 Version: 1.1.0
 Authors@R: c( 
     person("Kilian", "Frühholz", email = "kilian.fruehholz@tum.de", role = c("aut", "cre"),
