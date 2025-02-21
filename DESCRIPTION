@@ -1,13 +1,22 @@
 Package: tropTongue
-Title: Estimating the proboscis length of tropical bees
+Title: Improving allometric models to estimate the proboscis length of tropical bees
 Version: 1.1.0
-Authors@R: 
+Authors@R: c( 
     person("Kilian", "Frühholz", , "kilian.fruehholz@tum.de", role = c("aut", "cre"),
-           comment = c(ORCID = "0009-0005-1403-2315"))
+           comment = c(ORCID = "0009-0005-1403-2315")),
+    person("Kenneth", "Kuba", role = "aut"),
+    person("Maximilian", "Pitz", role = "aut"),
+    person("Julia", "Windl", role = "aut"),
+    person("Alexander", "Keller", role = "aut"),
+    person("Gunnar", "Brehm", role = "aut"),
+    person("Claus", "Rasmussen", role = "aut"),
+    person("Sara Diana", "Leonhardt", role = "aut"),
+    person("Ugo Mendes", "Diniz", role = "aut"),
+           )
 Description: Based on allometric equations we created a function which estimates 
     the proboscis length of tropical bees based on the intertegular distance 
     and taxonomic variables.
-License: file LICENSE
+License: CC BY 4.0
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.1
