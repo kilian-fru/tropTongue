@@ -4,10 +4,7 @@ citHeader("To cite tropTongue in publications use:")
 
 citEntry(entry = "Article",
   title        = "Improving allometric models to estimate the proboscis length of tropical bees",
-  author       = personList(as.person("Kilian Frühholz"),as.person("Kenneth Kuba"),
-                   as.person("Maximilian Pitz"), as.person("Julia Windl"), 
-                    as.person("Alexander Keller"), as.person("Gunnar Brehm"), as.person("Claus Rasmussen),
-                      as.person("Sara Diana Leonhardt"), as.person("Ugo Mendes Diniz")),
+  author       = personList(as.person("Kilian Frühholz"),as.person("Kenneth Kuba"), as.person("Maximilian Pitz"), as.person("Julia Windl"), as.person("Alexander Keller"), as.person("Gunnar Brehm"), as.person("Claus Rasmussen), as.person("Sara Diana Leonhardt"), as.person("Ugo Mendes Diniz")),
   journal      = "",
   year         = "2025",
   volume       = "",
