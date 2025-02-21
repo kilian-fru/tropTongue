@@ -10,9 +10,9 @@
 #' @details
 #' * Parameter fam accepts the following values: Apidae, Andrenidae, Halictidae, Megachilidae, Melittidae
 #' * Parameter tribe accepts the following values: Augochlorini, Euglossini, Meliponini
-#' * Parameter genus accepts the following values: Augochlora, Augochlorella, Augochloropsis, Dolichotrigona,
+#' * Parameter genus accepts the following values: Augochlora, Augochloropsis, Dolichotrigona,
 #' Eufriesa, Euglossa (Glossura), Euglossa (Glossurella), Euglossa sensu stricto, Euglossa, Eulaema, Exaerete, Melipona,
-#' Nannotrigona, Nogueirapis, Oxytrigona, Paratrigona, Partamona, Plebeia, Ptilotrigona, Scaptotrigona, Scaura, Tetragona, Tetragonisca, Trigona, Trigonisca
+#' Nannotrigona, Nogueirapis, Oxytrigona, Paratrigona, Partamona, Pereirapis, Plebeia, Ptilotrigona, Scaptotrigona, Scaura, Tetragona, Tetragonisca, Trigona, Trigonisca
 #'
 #'
 #' @export
@@ -30,7 +30,7 @@ tropicalTongue <- function(fam, tribe, genus, IT_mm){
                  "Plebeia", "Ptilotrigona", "Scaptotrigona", "Scaura", "Tetragona",
                  "Tetragonisca", "Trigona", "Trigonisca")
 
-  genus_aug <- c("Augochlora", "Augochlorella", "Augochloropsis")
+  genus_aug <- c("Augochlora", "Pereirapis", "Augochloropsis")
 
   genus_eug <- c("Eufriesa", "Euglossa", "Eulaema", "Exaerete", "Euglossa sensu stricto", "Euglossa (Glossura)", "Euglossa (Glossurella)")
 
@@ -145,17 +145,17 @@ tropicalTongue <- function(fam, tribe, genus, IT_mm){
       #Augochlora
       if (genus[i]==genus_aug[1]){
 
-        res[i] <- exp(0.50 + 1.23 * log(IT_mm[i]))
+        res[i] <- exp(0.62 + 0.64 * log(IT_mm[i]))
 
-        # Augochlorella
+        # Pereirapis
       }  else if (genus[i]==genus_aug[2]){
 
-        res[i] <- exp(0.46 + 0.52 * log(IT_mm[i]))
+        res[i] <- exp(0.45 + 0.64 * log(IT_mm[i]))
 
         # Augochloropsis
       } else if (genus[i]==genus_aug[3]){
 
-        res[i] <- exp(0.42 + 0.47 * log(IT_mm[i]))
+        res[i] <- exp(0.34 + 0.64 * log(IT_mm[i]))
 
         # Augochlorini general
       } else if (!(genus[i] %in% genus_aug)){
