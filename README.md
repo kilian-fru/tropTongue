@@ -7,8 +7,8 @@
 The goal of tropTongue is to make allometric equations for tropical bees
 accessible. Using the tropicalTongue-function the proboscis length of
 tropical bees can be estimated. For Meliponini (Apidae), Euglossini
-(Apidae) and Augochlorini (Halictidae) the function uses genus- or
-tribe-specific equations. For all other bees the function uses the
+(Apidae) and Augochlorini (Halictidae) the function uses (sub-) genus-
+or tribe-specific equations. For all other bees the function uses the
 function ITtongue from the BeeIT package to estimate the proboscis
 length.
 
@@ -26,5 +26,6 @@ devtools::install_github("kilian-fru/tropTongue")
 
 ``` r
 library(tropTongue)
-## tropicalTongue("Apidae", "Meliponini", "Trigona", 0.7)
+tropicalTongue("Apidae", "Meliponini", "Trigona", 0.7)
+#> [1] 0.9359706
 ```
