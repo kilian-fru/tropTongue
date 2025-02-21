@@ -10,7 +10,7 @@
 #' @details
 #' * Parameter fam accepts the following values: Apidae, Andrenidae, Halictidae, Megachilidae, Melittidae
 #' * Parameter tribe accepts the following values: Augochlorini, Euglossini, Meliponini
-#' * Parameter genus accepts the following values: Augochlora, Augochlorella, Augochloropsis, Corynura, Dolichotrigona,
+#' * Parameter genus accepts the following values: Augochlora, Augochlorella, Augochloropsis, Dolichotrigona,
 #' Eufriesa, Euglossa (Glossura), Euglossa (Glossurella), Euglossa sensu stricto, Euglossa, Eulaema, Exaerete, Melipona,
 #' Nannotrigona, Nogueirapis, Oxytrigona, Paratrigona, Partamona, Plebeia, Ptilotrigona, Scaptotrigona, Scaura, Tetragona, Tetragonisca, Trigona, Trigonisca
 #'
@@ -30,7 +30,7 @@ tropicalTongue <- function(fam, tribe, genus, IT_mm){
                  "Plebeia", "Ptilotrigona", "Scaptotrigona", "Scaura", "Tetragona",
                  "Tetragonisca", "Trigona", "Trigonisca")
 
-  genus_aug <- c("Augochlora", "Augochlorella", "Augochloropsis", "Corynura")
+  genus_aug <- c("Augochlora", "Augochlorella", "Augochloropsis")
 
   genus_eug <- c("Eufriesa", "Euglossa", "Eulaema", "Exaerete", "Euglossa sensu stricto", "Euglossa (Glossura)", "Euglossa (Glossurella)")
 
@@ -157,15 +157,10 @@ tropicalTongue <- function(fam, tribe, genus, IT_mm){
 
         res[i] <- exp(0.42 + 0.47 * log(IT_mm[i]))
 
-        # Corynura
-      } else if (genus[i]==genus_aug[4]){
-
-        res[i] <- exp(0.09 + 0.11 * log(IT_mm[i]))
-
         # Augochlorini general
       } else if (!(genus[i] %in% genus_aug)){
 
-      res[i] <- exp(0.38 + 0.64 * log(IT_mm[i]))
+      res[i] <- exp(0.45 + 0.51 * log(IT_mm[i]))
 
       }
 
