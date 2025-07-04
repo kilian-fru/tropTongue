@@ -60,82 +60,82 @@ tropicalTongue <- function(fam, tribe, genus, IT_mm){
       # Dolichotrigona
       if(genus[i]==genus_mel[1]){
 
-        res[i] <- exp(0.21 + 0.55 * log(IT_mm[i]))
+        res[i] <- exp(0.26 + 0.56 * log(IT_mm[i]))
 
         # Melipona
       } else if(genus[i]==genus_mel[2]){
 
-        res[i] <- exp(1.01 + 0.55 * log(IT_mm[i]))
+        res[i] <- exp(1.00 + 0.56 * log(IT_mm[i]))
 
         # Nannotrigona
       } else if (genus[i]==genus_mel[3]){
 
-        res[i] <- exp(0.36 + 0.55 * log(IT_mm[i]))
+        res[i] <- exp(0.41 + 0.56 * log(IT_mm[i]))
 
         # Nogueirapis
       } else if (genus[i]==genus_mel[4]){
 
-        res[i] <- exp(0.67 + 0.55 * log(IT_mm[i]))
+        res[i] <- exp(0.72 + 0.56 * log(IT_mm[i]))
 
         # Oxytrigona
       } else if (genus[i]==genus_mel[5]){
 
-        res[i] <- exp(0.39 + 0.55 * log(IT_mm[i]))
+        res[i] <- exp(0.39 + 0.56 * log(IT_mm[i]))
 
         # Paratrigona
       } else if (genus[i]==genus_mel[6]){
 
-        res[i] <- exp(0.36 + 0.55 * log(IT_mm[i]))
+        res[i] <- exp(0.26 + 0.56 * log(IT_mm[i]))
 
         # Partamona
       } else if (genus[i]==genus_mel[7]){
 
-        res[i] <- exp(0.94 + 0.55 * log(IT_mm[i]))
+        res[i] <- exp(0.99 + 0.56 * log(IT_mm[i]))
 
         # Plebeia
       } else if (genus[i]==genus_mel[8]){
 
-        res[i] <- exp(0.22 + 0.55 * log(IT_mm[i]))
+        res[i] <- exp(0.21 + 0.56 * log(IT_mm[i]))
 
         # Ptilotrigona
       } else if (genus[i]==genus_mel[9]){
 
-        res[i] <- exp(0.62 + 0.55 * log(IT_mm[i]))
+        res[i] <- exp(0.72 + 0.56 * log(IT_mm[i]))
 
         # Scaptotrigona
       } else if (genus[i]==genus_mel[10]){
 
-        res[i] <- exp(0.81 + 0.55 * log(IT_mm[i]))
+        res[i] <- exp(0.90 + 0.56 * log(IT_mm[i]))
 
         # Scaura
       } else if (genus[i]==genus_mel[11]){
 
-        res[i] <- exp(0.16 + 0.55 * log(IT_mm[i]))
+        res[i] <- exp(0.21 + 0.56 * log(IT_mm[i]))
 
         # Tetragona
       } else if (genus[i]==genus_mel[12]){
 
-        res[i] <- exp(0.21 + 0.55 * log(IT_mm[i]))
+        res[i] <- exp(0.26 + 0.56 * log(IT_mm[i]))
 
         # Tetragonisca
       } else if (genus[i]==genus_mel[13]){
 
-        res[i] <- exp(0.42 + 0.55 * log(IT_mm[i]))
+        res[i] <- exp(0.48 + 0.56 * log(IT_mm[i]))
 
         # Trigona
       } else if (genus[i]==genus_mel[14]){
 
-        res[i] <- exp(0.71 + 0.55 * log(IT_mm[i]))
+        res[i] <- exp(0.68 + 0.56 * log(IT_mm[i]))
 
         # Trigonisca
       } else if (genus[i]==genus_mel[15]){
 
-        res[i] <- exp(0.13 + 0.55 * log(IT_mm[i]))
+        res[i] <- exp(0.20 + 0.56 * log(IT_mm[i]))
 
         # Meliponini general
       } else if (!(genus[i] %in% genus_mel)){
 
-      res[i] <- exp(0.28 + 1.39 * log(IT_mm[i]))
+      res[i] <- exp(0.27 + 1.35 * log(IT_mm[i]))
 
       }
 
@@ -145,22 +145,22 @@ tropicalTongue <- function(fam, tribe, genus, IT_mm){
       #Augochlora
       if (genus[i]==genus_aug[1]){
 
-        res[i] <- exp(0.62 + 0.64 * log(IT_mm[i]))
+        res[i] <- exp(0.71 + 0.45 * log(IT_mm[i]))
 
         # Pereirapis
       }  else if (genus[i]==genus_aug[2]){
 
-        res[i] <- exp(0.45 + 0.64 * log(IT_mm[i]))
+        res[i] <- exp(0.34 + 0.45 * log(IT_mm[i]))
 
         # Augochloropsis
       } else if (genus[i]==genus_aug[3]){
 
-        res[i] <- exp(0.34 + 0.64 * log(IT_mm[i]))
+        res[i] <- exp(0.33 + 0.45 * log(IT_mm[i]))
 
         # Augochlorini general
       } else if (!(genus[i] %in% genus_aug)){
 
-      res[i] <- exp(0.45 + 0.51 * log(IT_mm[i]))
+      res[i] <- exp(0.45 + 0.49 * log(IT_mm[i]))
 
       }
 
@@ -170,17 +170,17 @@ tropicalTongue <- function(fam, tribe, genus, IT_mm){
       #Eufriesea
       if (genus[i]==genus_eug[1]){
 
-        res[i] <- exp(5.32 + -1.94 * log(IT_mm[i]))
+        res[i] <- exp(5.06 + -1.75 * log(IT_mm[i]))
 
         # Euglossa
       } else if (genus[i]==genus_eug[2]){
 
-        res[i] <- exp(1.46 + 0.87 * log(IT_mm[i]))
+        res[i] <- exp(1.85 + 0.50 * log(IT_mm[i]))
 
         # Eulaema
       } else if (genus[i]==genus_eug[3]){
 
-        res[i] <- exp(2.39 + 0.35 * log(IT_mm[i]))
+        res[i] <- exp(2.51 + 0.30 * log(IT_mm[i]))
 
         # Exaerete
       } else if (genus[i]==genus_eug[4]){
@@ -190,22 +190,22 @@ tropicalTongue <- function(fam, tribe, genus, IT_mm){
         # Euglossa sensu stricto
       } else if (genus[i]==genus_eug[5]){
 
-        res[i] <- exp(3.15 + -0.87 * log(IT_mm[i]))
+        res[i] <- exp(3.34 + 0.97 * log(IT_mm[i]))
 
         # Euglossa (Glossura)
       } else if (genus[i]==genus_eug[6]){
 
-        res[i] <- exp(1.18 + 1.53 * log(IT_mm[i]))
+        res[i] <- exp(0.97 + 1.56 * log(IT_mm[i]))
 
         # Euglossa (Glossurella)
       } else if (genus[i]==genus_eug[7]){
 
-        res[i] <- exp(1.96 + 0.64 * log(IT_mm[i]))
+        res[i] <- exp(1.39 + 1.10 * log(IT_mm[i]))
 
         # Euglossini general
       } else if (!(genus[i] %in% genus_eug)){
 
-      res[i] <- exp(1.61 + 0.74 * log(IT_mm[i]))
+      res[i] <- exp(1.38 + 0.90 * log(IT_mm[i]))
 
       }
 
